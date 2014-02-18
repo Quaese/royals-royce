@@ -19,6 +19,9 @@
 
         // Private:
         function init(){
+            // Testen, ob CSS-Eigenschaft existiert
+            isCss = checkCssProperty('transition');
+
             // Dimensionen berechnen
             calcDimensions();
 
@@ -42,9 +45,6 @@
             list.css({
                 'left': (defaults.index*defaults.width) + "px"
             });
-
-            // Testen, ob CSS-Eigenschaft existiert
-            isCss = checkCssProperty('transition');
 
             // Breite für Teil-Inhalte festlegen
             slides.each(function(index, element){
