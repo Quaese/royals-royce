@@ -13,6 +13,7 @@
                 anim: 1200
             }, options),
             preventDefaultEvents = true,
+            isMoving = false,
             startX, startY, isCss;
 
 
@@ -183,6 +184,9 @@
                 }
 
             }
+
+            // isMoving-Flag zurücksetzen
+            isMoving = false;
         }
 
 /* *** [HILFSFUNKTIONEN] *** */
